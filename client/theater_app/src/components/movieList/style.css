@@ -1,0 +1,191 @@
+/* MovieList.css */
+
+/* Style for the Movies container */
+.movies-container {
+    margin: 20px;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  
+  /* Style for the movie list */
+  .movies-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movies-list li {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* Style for the Create Movie button */
+  .create-movie-button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00B4CC;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .create-movie-button:hover {
+    background-color: #00B4CC;
+  }
+  
+  /* Style for the Create Movie form */
+  .create-movie-form {
+    margin-top: 20px;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+  }
+  
+  .create-movie-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .create-movie-form input,
+  .create-movie-form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-movie-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .create-movie-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* MovieList.css */
+
+/* Rest of your existing styles */
+
+/* Style for the modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the modal dialog */
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal label {
+    margin-bottom: 10px;
+  }
+  
+  .modal input,
+  .modal textarea {
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+.submit{
+    width: 200px;
+    margin-left: 80px;
+}
+
+/* MovieList.css */
+
+/* Rest of your existing styles */
+
+/* Style for the movies grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in the grid */
+  gap: 20px; /* Gap between grid items */
+  margin-bottom: 2rem;
+}
+
+/* Style for the movie cards */
+.movie-card {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.movie-card p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.movie-card h3, p{
+  text-transform: capitalize;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem; 
+  }
+}
