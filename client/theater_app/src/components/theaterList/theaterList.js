@@ -108,7 +108,7 @@ const TheaterList = () => {
           <div key={index} className="movie-card">
             <h3>{theater.name}</h3>
             <p>Location: {theater.location}</p>
-            {/* <p>Movie Time: {theater.movieTime}</p> */}
+            <p>Tickets Available: {theater.seatNumber}</p>
           </div>
         ))}
       </div>

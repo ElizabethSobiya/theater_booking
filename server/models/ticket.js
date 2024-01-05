@@ -1,4 +1,3 @@
-// ticket.js
 const mongoose = require('mongoose');
 
 const ticketSchema = new mongoose.Schema({
@@ -15,6 +14,11 @@ const ticketSchema = new mongoose.Schema({
   seatNumber: {
     type: String,
     required: true,
+    unique: true, // Ensures unique seat numbers
+  },
+  isBooked: {
+    type: Boolean,
+    default: false, // Indicates whether the seat is booked or not
   },
 });
 
